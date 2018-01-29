@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>List bucket Creator</title>
+        
+        <!-- CUSTOM CSS -->
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+    
+    <body>
+        
+        <div class="container">
+            <div class="formBox">
+                <form class="form-group">
+                    <label for="textInput">Enter a Task
+                        <input type="text" id="textInput" class="form-control">
+                    </label>
+                <button type="button" class="btnSubmit" disabled="dis">Add Task!</button>
+                </form>
+            </div> <!-- .formBox -->
+            
+            <div class="tasks">
+                <form class="keepsTrack">
+                    <label id="lblPending">Pending Tasks&nbsp;&colon;&nbsp;<label id="countPending"></label></label>
+                    
+                    <label id="lblCompleted">Completed Tasks&nbsp;&colon;&nbsp;<label id="countCompleted"></label></label>
+                </form>
+                
+                <div class="taskBox">
+                    <ul class="list">
+                        
+                    </ul>
+                
+                </div> <!-- .taskBox -->
+                
+            </div> <!-- .tasks -->
+        
+        </div> <!-- .container -->
+        
+        
+        
+        
+        
+        
+    
+        <!-- JQuery Library -->
+        <script>window.jQuery || document.write('<script src="js/jquery-3.2.1.js"><\/script>');</script>
+        
+        <!-- CUSTOM JQuery -->
+        <script src="js/script.js"></script>
+    </body>
+</html>

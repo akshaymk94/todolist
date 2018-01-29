@@ -1,0 +1,112 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    height: 720px;
+    width: 960px;
+    margin: 0 auto;
+    background: #EADDFF;
+    padding: 10px;
+}
+
+.formBox {
+    height: 80px;
+    line-height: 80px;
+    padding: 10px;
+    text-align: center;
+    background: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.formBox #textInput {
+    padding: 5px;
+    font-size: 18px;
+    -webkit-border-radius: 5px;
+    border: solid 1px #eee;
+}
+
+.btnSubmit {
+    padding: 7px;
+    font-size: 18px;
+    -webkit-border-radius: 5px;
+    border: solid 1px #eee;
+    background: #3664FF;
+    color: #fff;
+}
+
+.tasks {
+    margin-top: 10px;
+    height: 400px;
+    padding: 10px;
+    background: #fff;
+    width: 940px;
+    padding: 10px;
+}
+
+.newListItem {
+    width: 910px;
+    margin: 10px;
+    top: 50px;
+    border: solid 1px black;
+}
+
+.taskValue {
+    display: block;
+    width: 910px;
+    line-height: 25px;
+    padding: 5px;
+    box-sizing: border-box;
+    background: #ffbf5d;
+    font-weight: bold;
+    font-size: 14px;
+    
+}
+
+.keepsTrack {
+    height: 30px;
+    line-height: 23px;
+    
+}
+
+#lblPending {
+    float: left;
+    padding: 5px;
+    color: #ff8000;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#lblCompleted {
+    float: right;
+    padding: 5px;
+    color: #3CC600;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+    margin-right: 10px;
+}
+
+.newCheckBox {
+    float: right;
+}
+
+.list {
+    padding: 0;
+    list-style: none;
+}
+
+.newListItem:hover {
+    cursor: pointer;
+}
+
+.formUpdateTask {
+    line-height: 25px;
+    padding: 5px;
+    background: #6a6a6a;
+    font-weight: bold;
+    font-size: 14px;
+}
