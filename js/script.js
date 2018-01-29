@@ -4,7 +4,7 @@ $(document).ready(function() {
     var completed = 0;
     
     function trackCount() {
-        var total = $('input.newCheckBox').length;
+        var total = $('.newListItem').length;
         completed = $('input.newCheckBox:checked').length;
         pending = total-completed;
         displayCounts();
@@ -16,15 +16,11 @@ $(document).ready(function() {
     }
     
     $('body') .on('click', '.btnSubmit', function() {
-        if($('#textInput').val() != "") {
-            
-            var newText = $('#textInput').val();
-            $('<li class="newListItem"></li>').appendTo('.list');
-            $('<strong class="taskValue">' + newText + '</strong>').appendTo('.newListItem');
+        
+           var newText = $('#textInput').val();
+            $('<li class="newListItem"><strong class="taskValue">' + newText + '</strong></li>').appendTo('.list');
             $('#textInput').val(null);
-            newText = null;
             trackCount();
-        }
         
     });
     
